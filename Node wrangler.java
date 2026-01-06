@@ -1,31 +1,45 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
 class Node{
     int data;
     Node next;
+    
     //constructor
     Node(int a){
         data=a;
         next=null;
     }
     
-    //method get data
+    //getdata
     public void getdata(){
-        System.out.println(data);
+       System.out.println(data); 
     }
-    public void getref(){
-        System.out.println(next);
+    
+    //method getData
+    public void getData(){
+        System.out.println(data); 
     }
+    //method getref
+     public void getRef(){
+        System.out.println(next); 
+    }
+    
 }
 class Main {
     public static void main(String[] args) {
-        System.out.println("ajay");
+        System.out.println("lakshmi");
+        Node a=new Node(50);
         Node b=new Node(100);
-        b.getdata();
-        Node c=new Node(44);
-        c.getdata();
-        Node d=new Node(100);
-        d.getdata();
-        Node e=new Node(100);
-        e.getdata();
-    
+         System.out.println(a);
+         System.out.println(b);
+         a.getdata();
+         b.getdata();
+         
+         a.getRef();
+         a.next=b;
+         a.getRef();
+         
+         
+       
     }
 }
